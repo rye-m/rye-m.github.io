@@ -22,8 +22,8 @@ title: Kyon's home sweet home
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm kyon! I'm trying build my first homepage!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "http://kyon.tokyo" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

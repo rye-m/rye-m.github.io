@@ -1,5 +1,9 @@
+# Jekyll related file
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# any pictures, video files in asset folder
+assets/img/2024
