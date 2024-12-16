@@ -20,17 +20,17 @@ The capacity rate of our cabin was less than 30% (until we got to Kansas).
 Since there was less people, I could use diner car without making reservation! I had breakfast, lunch and dinner there and it was greaaat!!
 ![Dinner on the rails](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3664.JPG "Dinner on the rail")
 
-Since this train was ["A Superliner"](https://amtrakguide.com/2022/01/06/superliner-trains-layout-routes/), it had second floor where my seat was located and all the bathroom and luggage room were in  downstairs.
-And the two greatest thing about this Superliner are the lounge and the bathroom!!
+Since this train was a ["Superliner"](https://amtrakguide.com/2022/01/06/superliner-trains-layout-routes/), it had a second floor where my seat was located, all the bathrooms and the luggage room was in downstairs.
+And the two greatest things about this Superliner are the lounge and the bathroom!!
 ![Chicag Union Station](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3682.JPG "Chicag Union Station")
 ![Submarine-look-like the minimalist Buthroom](../_site/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3832.JPG "Submarine-look-like Buthroom")
 
-The view from the train was fantastically fantastic!! 1st day, it was sunny and I saw lots of geat canions!
+The view from the train was amazing!! 1st day, it was sunny and I saw lots of great canyons!
 ![Chicag Union Station](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/ "Chicag Union Station")
 
 
 
-Finally, arrived Chicago!
+Finally, arrived in Chicago!
 ![Chicag Union Station](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3858.JPG "Chicag Union Station")
 
 ### Second Segment:
@@ -38,4 +38,4 @@ Finally, arrived Chicago!
 - 26 hours
 
 
-This time the train doesn't have second floor which means they doesn't have the cool bathroom...
+This time the train did't have a second floor which means they doesn't have a cool bathroom...
