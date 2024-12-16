@@ -7,20 +7,20 @@ categories: jekyll update
 
 # Crossing the USA by train
 
-I took Amtrak trains to go back to New York City from Los Angeles which took 73? hours in total. Here is the route.
+I took Amtrak trains to go back to New York City from Los Angeles which took 73(?) hours in total. Here is the route.
 ![Amtrak Map Route](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/Screenshot%202024-11-19%20at%2012.41.10 PM.png "Amtrak Map Route")
 
 ### First Segment:
 - Los Angeles to Chicago
 - 45 hours 
 
-I like this segment the most because there were less people, lots of great view, great train, and great crews.
+I like this segment the most because there was less people, lots of great views, great trains, and great crews.
 
-The capacity rate of our cabin was less than 30%. (Until we got to Kansas)
-Since there was less people, we can use diner without making reservation! I had breakfast, lunch and diner there and it was greaaat!!
-![Dinner on the rail](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3664.JPG "Dinner on the rail")
+The capacity rate of our cabin was less than 30% (until we got to Kansas).
+Since there was less people, I could use diner car without making reservation! I had breakfast, lunch and dinner there and it was greaaat!!
+![Dinner on the rails](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3664.JPG "Dinner on the rail")
 
-Since this train was "Superliner", we had second floor where my seat was located and all the bathroom and lagage room were in  downstairs.
+Since this train was ["A Superliner"](https://amtrakguide.com/2022/01/06/superliner-trains-layout-routes/), it had second floor where my seat was located and all the bathroom and luggage room were in  downstairs.
 And the two greatest thing about this Superliner are the lounge and the bathroom!!
 ![Chicag Union Station](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3682.JPG "Chicag Union Station")
 ![Submarine-look-like the minimalist Buthroom](../_site/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3832.JPG "Submarine-look-like Buthroom")
