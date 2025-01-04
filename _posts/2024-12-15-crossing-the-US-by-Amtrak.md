@@ -12,7 +12,7 @@ I took Amtrak trains to go back to New York City from Los Angeles which took 73(
 
 ### First Segment:
 - Los Angeles to Chicago
-- 45 hours 
+- 47 hours 
 
 I like this segment the most because there was less people, lots of great views, great trains, and great crews.
 
@@ -30,12 +30,15 @@ The view from the train was amazing!! 1st day, it was sunny and I saw lots of gr
 
 
 
-Finally, arrived in Chicago!
+Finally, arrived in Chicago! I had 4 hours here,so I walk around the station (sadly, it was rainning and I was super tired, so I didn't go further...)
+![Chicag Union Station](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3858.JPG "Chicag Union Station")
 ![Chicag Union Station](/assets/img/2024/12/14/crossing-the-US-by-Amtrak/IMG_3858.JPG "Chicag Union Station")
 
 ### Second Segment:
 - Chicago to Washington D.C.
-- 26 hours
+- 20 hours
+- Lay over at Chicago: 4 hours
 
 
 This time the train did't have a second floor which means they doesn't have a cool bathroom...
+And the dining menu was limited, they had fewer options. But sisnce the kitchen was also in the same floor, I could see it! It was very cool to see the shef cooking while the train was super wobbly.
