@@ -1,0 +1,29 @@
+prune:
+  auto_prune: true
+  exclude: ['.git']
+
+data_sources:
+  - type: filesystem
+    encoding: utf-8
+
+base_url: http://kyon.tokyo
+
+# deploy:
+#   default:
+#     kind: rsync
+#     dst: "kyon.tokyo"
+#     options:
+#       [
+#         "--group",
+#         "--links",
+#         "--perms",
+#         "--partial",
+#         "--progress",
+#         "--recursive",
+#         "--times",
+#         "--verbose",
+#         "-zz",
+#         "--chmod=u=rwX,go=rX",
+#         "--delete-after",
+#       ]
+

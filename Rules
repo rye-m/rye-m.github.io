@@ -1,0 +1,121 @@
+#!/usr/bin/env ruby
+
+preprocess do
+    @items.each do |item|
+        if item[:published]
+            item[:published] = DateTime.parse(item[:published].to_s)
+        end
+        if item[:updated]
+            item[:updated] = DateTime.parse(item[:updated].to_s)
+        end
+        if item[:tags]
+            item[:tags] = item[:tags].split(",").map{|t| t.strip}
+        end
+        if item[:url]
+            if item[:url] !~ /:\/\//
+                item[:url] = "https://" + item[:url]
+            end
+        end
+        if item[:title]
+            dir = item.identifier.to_s.split("/")[0..-2].join("/")+"/"
+            if item[:thumbnail]
+                if item[:thumbnail][0] != "/"
+                    # Thumbnail path is relative, make it absolute.
+                    item[:thumbnail] = dir+item[:thumbnail]
+                end
+            else
+                thumb = @items[dir+"*thumbnail*{png,jpg,jpeg,gif,svg}"] ||
+                    @items[dir+"*talk*.pdf"] ||
+                    @items[dir+"*.{png,jpg,jpeg,gif,svg,pdf}"]
+                if thumb
+                    item[:thumbnail] = thumb.identifier
+                else
+                    item[:thumbnail] = "/assets/images/avatar.png"
+                end
+            end
+            if ENV["NANOC_ENV"] != "dev"
+                # We don't build thumbnails in dev mode.
+                @items[item[:thumbnail]][:thumbnailize] = true
+            end
+        end
+    end
+end
+
+compile "/**/*.scss" do
+    filter :sass, syntax: :scss
+    write item.identifier.without_ext + ".css"
+end
+
+compile "/**/*.coffee" do
+    filter :coffeescript
+    write item.identifier.without_ext + ".js"
+end
+
+compile "/**/*.xml" do
+    filter :erb
+    write item.identifier.without_ext + ".html"
+end
+
+compile "/**/*.{png,jpg,jpeg,gif,svg}", :rep => :thumbnail do
+    if item[:thumbnailize]
+        filter :thumbnailize, :width => 600
+        write item.identifier + "-thumbnail.jpg"
+    end
+end
+
+compile "/**/*.{png,jpg,jpeg,gif,svg}", :rep => :minithumbnail do
+    if item[:thumbnailize]
+        filter :thumbnailize, :width => 350
+        write item.identifier + "-minithumbnail.jpg"
+    end
+end
+
+compile "/**/*.md" do
+    if item[:title]
+        filter :erb
+        filter :absolutize_paths
+        filter :kramdown
+        layout "/default.*"
+        write item.identifier.without_ext + ".html"
+    end
+end
+
+compile "/index.html.erb" do
+    filter :erb
+    layout "/default.*"
+    write item.identifier.to_s[0..-10] + ".html"
+end
+
+compile "/**/*.slim" do
+    filter :slim
+    layout "/default.*"
+    write item.identifier.without_ext + ".html"
+end
+
+compile "/**/*.pdf", :rep => :titlepage do
+    if ENV["NANOC_ENV"] != "dev"
+        # In dev mode, we don't build titlepages.
+        filter :titlepageize
+        write item.identifier + "-titlepage.svg"
+    end
+end
+
+compile "/**/*.pdf", :rep => :thumbnail do
+    if item[:thumbnailize]
+        filter :titlepageize
+        filter :thumbnailize, :width => 600
+        write item.identifier + "-titlepage.svg-thumbnail.jpg"
+    end
+end
+
+compile "/**/*.pdf", :rep => :minithumbnail do
+    if item[:thumbnailize]
+        filter :titlepageize
+        filter :thumbnailize, :width => 350
+        write item.identifier + "-titlepage.svg-minithumbnail.jpg"
+    end
+end
+
+passthrough "/**/*"
+
+layout "/**/*", :erb

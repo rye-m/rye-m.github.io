@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Clickbait</title>
+
+        <link rel="stylesheet" href="/assets/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.6, user-scalable=yes" />
+
+        <meta name="author" content="blinry" />
+        
+            <meta name="date" content="2020-07-12" />
+        
+        <meta name="description" content="An action game where the goal is to close all popups! But your mouse cursor might have other plans..." />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@blinry" />
+        <meta name="twitter:title" content="Clickbait" />
+        <meta name="twitter:description" content="An action game where the goal is to close all popups! But your mouse cursor might have other plans..." />
+        <meta name="twitter:creator" content="@blinry" />
+        <meta name="twitter:image" content="https://blinry.org/clickbait/cover.png-thumbnail.jpg" />
+
+        <meta property="og:title" content="Clickbait" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://blinry.org/clickbait/" />
+        <meta property="og:image" content="https://blinry.org/clickbait/cover.png-thumbnail.jpg" />
+        <meta property="og:description" content="An action game where the goal is to close all popups! But your mouse cursor might have other plans..." />
+
+        <meta name="flattr:id" content="12e3r3" />
+
+        
+
+        <link rel="shortcut icon" type="image/png" href="/assets/images/avatar.png" />
+        <link rel="alternate" type="application/atom+xml" href="/feed/" />
+
+        
+
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="home">
+                    <a href="/"
+                        ><img
+                            src="/assets/images/avatar.png"
+                            alt="Cartoon avatar of blinry"
+                    /></a>
+                </li>
+                <li><a href="/#latest">Latest</a></li>
+                <li><a href="/#popular">Popular</a></li>
+                <li><a href="/#favs">My Favorites</a></li>
+                <li class="end"><a href="/about/">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <h1>Clickbait</h1>
+            
+            <div class="meta">
+                
+                    2020-07-12
+                
+                
+                /
+                <a href="/about/" target="_blank">blinry</a>
+                
+                    /
+                    <a href="/about/#license" target="_blank">CC BY-SA 4.0</a>
+                
+                
+                    / <a href="/#game">game</a>
+                
+            </div>
+
+            <p>An action game where the goal is to <strong>close all popups!</strong> But your mouse cursor might have other plans…</p>
+
+<p>Play it <a href="https://blinry.itch.io/clickbait">in your browser</a>!</p>
+
+<p><a href="https://blinry.itch.io/clickbait"><img src="/clickbait/cover.png" alt="" /></a></p>
+
+<h2 id="some-early-praise">Some early praise</h2>
+
+<p><em>“god I hate this game so much &lt;3 &lt;3 &lt;3”</em></p>
+
+<p><em>“Loved and hated this!  Playing it on a laptop trackpad was an experience, would highly recommend.”</em></p>
+
+<p><em>“So good! This is a 10/10 for me!”</em></p>
+
+<h2 id="story">Story</h2>
+
+<p>The <em>GMTK Game Jam</em> is organized by a team around the British video game journalist Mark Brown, and has grown into one of the largest online game jams! It focuses on clever game design and mechanics, which I really like!</p>
+
+<p>This year’s theme was “Out of Control”! <a href="https://bleeptrack.de">Bleeptrack</a> and I made an action game involving a lot of popups, a very disobedient mouse cursor, and a paperclip that’s definitely not helping! :P <a href="https://winniehell.de">Winnie</a> composed an original score for us, which is released under CC BY-SA: <a href="https://7.5bits.winniehell.de/windows-9001/">Windows 9001</a>. Thanks to Winston for playtesting!</p>
+
+<p>This is also my first game that comes with a silly trailer:</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-width="550px">Loading tweet...<a href="https://twitter.com/blinry/status/1282407324712394754"></a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>We made the game using the open-source game engine <em>Godot</em>, which I’ve really grown fond of this year! You can find the source code <a href="https://github.com/blinry/clickbait">on GitHub</a>.</p>
+
+<h2 id="development">Development</h2>
+
+<p>The GMTK Game Jam is 48-hour jam, and whew, after doing a lot of 72-hour jams, I really felt the difference! You need to start playtesting and polishing much earlier, at the beginning or in the middle of the second day.</p>
+
+<p>We spent quite some time brainstorming. Some alternative ideas:</p>
+
+<ul>
+  <li>A game where you play as a dog, who is out of control (or wants to get out of control?) while being on a leash, on walk through the park with its owner. You’d bark a lot, pee on everything, and if you poop somewhere, your owner would have to come pick it up, allowing you to control <em>them</em> a bit. :P I thought this might’ve been a fun toy, but we didn’t find a good angle on what the actual goal of the game could be.</li>
+  <li>A game with random time travel. You’d play Pacman or something, and at random points, the game would jump back into the past, or even ahead into the future. I’m really intrigued by the question how the future should look like if you haven’t played until that point yet - would we simulate all characters? Overall, without other gameplay elements to balance this, it might become frustrating quickly.</li>
+</ul>
+
+<p>But we also had several ideas involving an out-of-control mouse cursor. Initially, we thought you would need to lure the cursor somewhere by putting down little food pellets or something. But when we started collecting ideas on how the cursor might misbehave, we quickly realized a fun and chaotic action game where the control mode changes a lot might be fun!</p>
+
+<p>Some main challenges when developing this game was to implement our own UI system for the windows, and making sure that you can only click on the topmost one, and balancing the modes, making them not too easy and not too hard.</p>
+
+<p>Two tweet from during development:</p>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-width="550px">Loading tweet...<a href="https://twitter.com/blinry/status/1282293130734313472"></a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-width="550px">Loading tweet...<a href="https://twitter.com/blinry/status/1282357773930561544"></a></blockquote>
+<script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+            <!--
+                     - if @item[:tags]
+        hr
+        - if @item[:toot]
+          h2 Join the discussion!
+          p
+            | You can add your comment
+            a<> href=@item[:toot] target="_blank" in the Fediverse!
+            | Alternatively, drop me a mail at <span>m<span title="ihate@spam.com</span>">a</span>il</span>&#64;blinry<i title="</i>mailto:">.</i>org. Also, you can support me
+            a<> href="https://www.patreon.com/blinry" target="_blank" on Patreon
+            | or subscribe to
+            a< href="https://tinyletter.com/blinry" target="_blank" my newsletter
+            | !
+          iframe class="toot" id="toot" src="https://toot-embedder.blinry.org/#url=#{@item[:toot]}"
+          script iFrameResize({ log: true }, '#toot')
+        - else
+          h2 Comments?
+          p
+            | Send a message to
+            a<> href="https://chaos.social/@blinry" target="_blank" @blinry@chaos.social
+            | or drop me a mail at <span>m<span title="ihate@spam.com</span>">a</span>il</span>&#64;blinry<i title="</i>mailto:">.</i>org. Also, you can support me
+            a<> href="https://www.patreon.com/blinry" target="_blank" on Patreon
+            | or subscribe to
+            a< href="https://tinyletter.com/blinry" target="_blank" my newsletter
+            | !
+        /h2 Similar projects
+        /== box(things[0..2])
+            -->
+
+            
+                <hr>
+                
+                    <h2>Comments?</h2>
+                    <p>
+                        Send a message to
+                        <a href="https://chaos.social/@blinry" target="_blank">@blinry@chaos.social</a>
+                        or drop me a mail at <span>m<span title="ihate@spam.com</span>">a</span>il</span>&#64;blinry<i title="</i>mailto:">.</i>org.
+                        Also, you can support me
+                        <a href="https://www.patreon.com/blinry" target="_blank">on Patreon</a> or
+                        subscribe to <a href="https://tinyletter.com/blinry" target="_blank">my newsletter</a>!
+                    </p>
+                
+            
+        </div>
+        
+    </body>
+</html>
