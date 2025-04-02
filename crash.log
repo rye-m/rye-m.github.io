@@ -1,15 +1,17 @@
-Crash log created at 2025-03-05 00:04:58 -0500
+Crash log created at 2025-04-02 01:44:39 -0400
 
 ===== MESSAGE:
 
-Nanoc::Core::Filter::OutputNotWrittenError: The :titlepageize filter did not write anything to the required output file, /var/folders/k1/kg7nqg895w11yvtk7_sfgrcr0000gn/T/nanoc20250305-32348-fm0fvt/binary_items/0.
+NoMethodError: undefined method `path' for nil
 
-/Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:212:in `verify': The :titlepageize filter did not write anything to the required output file, /var/folders/k1/kg7nqg895w11yvtk7_sfgrcr0000gn/T/nanoc20250305-32348-fm0fvt/binary_items/0. (Nanoc::Core::Filter::OutputNotWrittenError)
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `block in setup_and_run'
-	from <internal:kernel>:90:in `tap'
+lib/helpers.rb:70:in `thumbnail_for': undefined method `path' for nil (NoMethodError)
+	from layout /default.html:21:in `get_binding'
+	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `eval'
+	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `result'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/filters/erb.rb:32:in `run'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:22:in `filter'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:67:in `layout'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
@@ -22,20 +24,22 @@ Nanoc::Core::Filter::OutputNotWrittenError: The :titlepageize filter did not wri
 
 ===== STACK TRACE:
 
-  0. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:212:in `verify'
-  1. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `block in setup_and_run'
-  2. <internal:kernel>:90:in `tap'
-  3. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  4. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:22:in `filter'
-  5. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
-  6. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
-  7. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
-  8. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  9. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  10. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  11. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
-  12. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  13. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  0. lib/helpers.rb:70:in `thumbnail_for'
+  1. layout /default.html:21:in `get_binding'
+  2. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `eval'
+  3. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `result'
+  4. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/filters/erb.rb:32:in `run'
+  5. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  6. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:67:in `layout'
+  7. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
+  8. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
+  9. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
+  10. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  11. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  12. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  13. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
+  14. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  15. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
 
 ===== VERSION INFORMATION:
 
@@ -51,6 +55,7 @@ Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21
   abbrev 0.1.2
   activesupport 8.0.1
   addressable 2.8.7
+  adsf 1.5.2
   base64 0.2.0
   benchmark 0.3.0, 0.4.0
   bigdecimal 3.1.5, 3.1.8
@@ -192,6 +197,8 @@ Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21
   psych 5.1.2
   public_suffix 5.1.1, 6.0.1
   racc 1.7.3, 1.8.1
+  rack 3.1.11
+  rackup 2.2.1
   rake 13.1.0, 13.2.1
   rb-fsevent 0.11.2
   rb-inotify 0.11.1
@@ -218,6 +225,7 @@ Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21
   shellwords 0.2.0
   simpleidn 0.2.3
   singleton 0.2.0
+  slim 5.2.1
   slow_enumerator_tools 1.1.0
   sorted_set 1.0.3
   stringio 3.1.1
@@ -225,8 +233,10 @@ Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21
   syntax_suggest 2.0.0
   syslog 0.1.2
   tempfile 0.2.1
+  temple 0.10.3
   terminal-table 1.8.0, 3.0.2
   test-unit 3.6.1
+  tilt 2.6.0
   time 0.3.0
   timeout 0.4.1
   tmpdir 0.2.0
@@ -285,11 +295,13 @@ Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21
   33. /Users/ryem/.gem/ruby/3.3.5/gems/net-http-0.6.0/lib
   34. /Users/ryem/.gem/ruby/3.3.5/gems/uri-1.0.2/lib
   35. /Users/ryem/.gem/ruby/3.3.5/gems/securerandom-0.4.0/lib
-  36. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0
-  37. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0/arm64-darwin23
-  38. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby
-  39. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0
-  40. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0/arm64-darwin23
-  41. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby
-  42. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0
-  43. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/arm64-darwin23
+  36. /Users/ryem/.gem/ruby/3.3.5/gems/rexml-3.3.9/lib
+  37. /Users/ryem/.gem/ruby/3.3.5/gems/kramdown-2.5.1/lib
+  38. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0
+  39. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0/arm64-darwin23
+  40. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby
+  41. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0
+  42. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0/arm64-darwin23
+  43. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby
+  44. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0
+  45. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/arm64-darwin23
