@@ -9,7 +9,7 @@ vendor
 #assets/img/2024
 
 # Nanoc related files
-# /output
+/output
 /tmp
 /.sass-cache
 /.bundle       

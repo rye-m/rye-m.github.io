@@ -13,9 +13,8 @@ deploy:
   default:
     kind: git
     branch: gh-pages
-    remote: git@int.nanoc.ws:/srv/http/nanoc.ws.git
-    branch: prod
-    forced: true
+    remote: https://github.com/rye-m/rye-m.github.io.git
+    # forced: true
 
 #     options:
 #       [
