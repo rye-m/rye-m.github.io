@@ -1,17 +1,26 @@
-Crash log created at 2025-04-02 01:44:39 -0400
+Crash log created at 2025-04-03 11:33:57 -0400
 
 ===== MESSAGE:
 
 NoMethodError: undefined method `path' for nil
 
-lib/helpers.rb:70:in `thumbnail_for': undefined method `path' for nil (NoMethodError)
-	from layout /default.html:21:in `get_binding'
+lib/helpers.rb:78:in `minithumbnail_for': undefined method `path' for nil (NoMethodError)
+	from layout /box.html.erb:2:in `get_binding'
 	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `eval'
 	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `result'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/filters/erb.rb:32:in `run'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:67:in `layout'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/helpers/rendering.rb:58:in `render'
+	from lib/helpers.rb:95:in `block in box'
+	from lib/helpers.rb:94:in `each'
+	from lib/helpers.rb:94:in `box'
+	from item /index.html.erb (rep default):14:in `get_binding'
+	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `eval'
+	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `result'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/filters/erb.rb:32:in `run'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:22:in `filter'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
@@ -24,22 +33,31 @@ lib/helpers.rb:70:in `thumbnail_for': undefined method `path' for nil (NoMethodE
 
 ===== STACK TRACE:
 
-  0. lib/helpers.rb:70:in `thumbnail_for'
-  1. layout /default.html:21:in `get_binding'
+  0. lib/helpers.rb:78:in `minithumbnail_for'
+  1. layout /box.html.erb:2:in `get_binding'
   2. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `eval'
   3. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `result'
   4. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/filters/erb.rb:32:in `run'
   5. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
-  6. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:67:in `layout'
-  7. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:34:in `block in run'
-  8. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
-  9. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
-  10. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
-  11. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  12. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
-  13. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
-  14. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
-  15. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  6. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/helpers/rendering.rb:58:in `render'
+  7. lib/helpers.rb:95:in `block in box'
+  8. lib/helpers.rb:94:in `each'
+  9. lib/helpers.rb:94:in `box'
+  10. item /index.html.erb (rep default):14:in `get_binding'
+  11. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `eval'
+  12. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/erb.rb:429:in `result'
+  13. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/lib/nanoc/filters/erb.rb:32:in `run'
+  14. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/filter.rb:188:in `setup_and_run'
+  15. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/executor.rb:22:in `filter'
+  16. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:32:in `block in run'
+  17. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
+  18. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/action_sequence.rb:48:in `each'
+  19. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/recalculate.rb:29:in `run'
+  20. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  21. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
+  22. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/cache.rb:28:in `run'
+  23. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:23:in `call'
+  24. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-core-4.13.3/lib/nanoc/core/compilation_phases/abstract.rb:25:in `block in call'
 
 ===== VERSION INFORMATION:
 
@@ -48,7 +66,7 @@ Running ruby 3.3.5 (2024-09-03) on arm64-darwin23 with RubyGems 3.5.16.
 
 ===== SYSTEM INFORMATION:
 
-Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6030 arm64
+Darwin Ryes-MBP.lan 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6030 arm64
 
 ===== INSTALLED GEMS:
 
@@ -295,13 +313,11 @@ Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21
   33. /Users/ryem/.gem/ruby/3.3.5/gems/net-http-0.6.0/lib
   34. /Users/ryem/.gem/ruby/3.3.5/gems/uri-1.0.2/lib
   35. /Users/ryem/.gem/ruby/3.3.5/gems/securerandom-0.4.0/lib
-  36. /Users/ryem/.gem/ruby/3.3.5/gems/rexml-3.3.9/lib
-  37. /Users/ryem/.gem/ruby/3.3.5/gems/kramdown-2.5.1/lib
-  38. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0
-  39. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0/arm64-darwin23
-  40. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby
-  41. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0
-  42. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0/arm64-darwin23
-  43. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby
-  44. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0
-  45. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/arm64-darwin23
+  36. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0
+  37. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby/3.3.0/arm64-darwin23
+  38. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/site_ruby
+  39. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0
+  40. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby/3.3.0/arm64-darwin23
+  41. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/vendor_ruby
+  42. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0
+  43. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/arm64-darwin23

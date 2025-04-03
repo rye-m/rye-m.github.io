@@ -2,15 +2,16 @@ prune:
   auto_prune: true
   exclude: ['.git']
 
-data_sources:
-  - type: filesystem
-    encoding: utf-8
+# data_sources:
+#   - type: filesystem
+#     encoding: utf-8
 
-base_url: http://kyon.tokyo
+# base_url: http://kyon.tokyo
 
-# deploy:
-#   default:
-#     kind: rsync
+deploy:
+  default:
+    kind: git
+    branch: gh-pages
 #     dst: "kyon.tokyo"
 #     options:
 #       [
