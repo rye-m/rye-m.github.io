@@ -8,11 +8,15 @@ prune:
 
 # base_url: http://kyon.tokyo
 
+
 deploy:
   default:
     kind: git
     branch: gh-pages
-#     dst: "kyon.tokyo"
+    remote: git@int.nanoc.ws:/srv/http/nanoc.ws.git
+    branch: prod
+    forced: true
+
 #     options:
 #       [
 #         "--group",
