@@ -1,53 +1,26 @@
-Crash log created at 2025-04-03 12:06:15 -0400
+Crash log created at 2025-04-08 10:03:51 -0400
 
 ===== MESSAGE:
 
-Nanoc::Deploying::Deployers::Git::Errors::BranchDoesNotExist: The branch to deploy, prod, does not exist.
-
-/Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:78:in `rescue in block in run': The branch to deploy, prod, does not exist. (Nanoc::Deploying::Deployers::Git::Errors::BranchDoesNotExist)
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:75:in `block in run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `chdir'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:48:in `deploy'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:16:in `run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/command_runner.rb:15:in `block in call'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/command_runner.rb:14:in `call'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command_dsl.rb:294:in `block in runner'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:362:in `run_this'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:298:in `run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:316:in `run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli.rb:88:in `block in run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli.rb:86:in `run'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/bin/nanoc:18:in `<top (required)>'
-	from /Users/ryem/.gem/ruby/3.3.5/bin/nanoc:25:in `load'
-	from /Users/ryem/.gem/ruby/3.3.5/bin/nanoc:25:in `<top (required)>'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `load'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `kernel_load'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:23:in `run'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:455:in `exec'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:35:in `dispatch'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:29:in `start'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.16/exe/bundle:28:in `block in <top (required)>'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/friendly_errors.rb:117:in `with_friendly_errors'
-	from /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.16/exe/bundle:20:in `<top (required)>'
-	from /Users/ryem/.rubies/ruby-3.3.5/bin/bundle:25:in `load'
-	from /Users/ryem/.rubies/ruby-3.3.5/bin/bundle:25:in `<main>'
-/Users/ryem/.gem/ruby/3.3.5/gems/tty-command-0.10.1/lib/tty/command.rb:106:in `run': Running `git checkout prod` failed with (TTY::Command::ExitError)
+TTY::Command::ExitError: Running `git push https://github.com/rye-m/rye-m.github.io.git gh-pages` failed with
   exit status: 1
   stdout: Nothing written
-  stderr: error: pathspec 'prod' did not match any file(s) known to git
+  stderr: error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+
+/Users/ryem/.gem/ruby/3.3.5/gems/tty-command-0.10.1/lib/tty/command.rb:106:in `run': Running `git push https://github.com/rye-m/rye-m.github.io.git gh-pages` failed with (TTY::Command::ExitError)
+  exit status: 1
+  stdout: Nothing written
+  stderr: error: RPC failed; HTTP 400 curl 22 The requested URL returned error: 400
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
 
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:105:in `run_cmd'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:109:in `run_cmd_unless_dry'
-	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:76:in `block in run'
+	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:93:in `block in run'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `chdir'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `run'
 	from /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:48:in `deploy'
@@ -85,41 +58,43 @@ Nanoc::Deploying::Deployers::Git::Errors::BranchDoesNotExist: The branch to depl
 
 ===== STACK TRACE:
 
-  0. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:78:in `rescue in block in run'
-  1. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:75:in `block in run'
-  2. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `chdir'
-  3. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `run'
-  4. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:48:in `deploy'
-  5. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:16:in `run'
-  6. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/command_runner.rb:15:in `block in call'
-  7. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-  8. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-  9. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/command_runner.rb:14:in `call'
-  10. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command_dsl.rb:294:in `block in runner'
-  11. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:362:in `run_this'
-  12. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:298:in `run'
-  13. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:316:in `run'
-  14. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli.rb:88:in `block in run'
-  15. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
-  16. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
-  17. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli.rb:86:in `run'
-  18. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/bin/nanoc:18:in `<top (required)>'
-  19. /Users/ryem/.gem/ruby/3.3.5/bin/nanoc:25:in `load'
-  20. /Users/ryem/.gem/ruby/3.3.5/bin/nanoc:25:in `<top (required)>'
-  21. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `load'
-  22. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `kernel_load'
-  23. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:23:in `run'
-  24. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:455:in `exec'
-  25. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
-  26. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
-  27. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
-  28. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:35:in `dispatch'
-  29. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
-  30. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:29:in `start'
-  31. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.16/exe/bundle:28:in `block in <top (required)>'
-  32. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/friendly_errors.rb:117:in `with_friendly_errors'
-  33. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.16/exe/bundle:20:in `<top (required)>'
-  34. /Users/ryem/.rubies/ruby-3.3.5/bin/bundle:25:in `load'
+  0. /Users/ryem/.gem/ruby/3.3.5/gems/tty-command-0.10.1/lib/tty/command.rb:106:in `run'
+  1. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:105:in `run_cmd'
+  2. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:109:in `run_cmd_unless_dry'
+  3. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:93:in `block in run'
+  4. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `chdir'
+  5. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/deployers/git.rb:60:in `run'
+  6. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:48:in `deploy'
+  7. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-deploying-1.0.2/lib/nanoc/deploying/command_runners/deploy.rb:16:in `run'
+  8. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/command_runner.rb:15:in `block in call'
+  9. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  10. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  11. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/command_runner.rb:14:in `call'
+  12. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command_dsl.rb:294:in `block in runner'
+  13. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:362:in `run_this'
+  14. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:298:in `run'
+  15. /Users/ryem/.gem/ruby/3.3.5/gems/cri-2.15.12/lib/cri/command.rb:316:in `run'
+  16. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli.rb:88:in `block in run'
+  17. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:57:in `handle_while'
+  18. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli/error_handler.rb:15:in `handle_while'
+  19. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-cli-4.13.3/lib/nanoc/cli.rb:86:in `run'
+  20. /Users/ryem/.gem/ruby/3.3.5/gems/nanoc-4.13.3/bin/nanoc:18:in `<top (required)>'
+  21. /Users/ryem/.gem/ruby/3.3.5/bin/nanoc:25:in `load'
+  22. /Users/ryem/.gem/ruby/3.3.5/bin/nanoc:25:in `<top (required)>'
+  23. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `load'
+  24. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:58:in `kernel_load'
+  25. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli/exec.rb:23:in `run'
+  26. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:455:in `exec'
+  27. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/command.rb:28:in `run'
+  28. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/invocation.rb:127:in `invoke_command'
+  29. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor.rb:527:in `dispatch'
+  30. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:35:in `dispatch'
+  31. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/vendor/thor/lib/thor/base.rb:584:in `start'
+  32. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/cli.rb:29:in `start'
+  33. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.16/exe/bundle:28:in `block in <top (required)>'
+  34. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/3.3.0/bundler/friendly_errors.rb:117:in `with_friendly_errors'
+  35. /Users/ryem/.rubies/ruby-3.3.5/lib/ruby/gems/3.3.0/gems/bundler-2.5.16/exe/bundle:20:in `<top (required)>'
+  36. /Users/ryem/.rubies/ruby-3.3.5/bin/bundle:25:in `load'
 
 ===== VERSION INFORMATION:
 
