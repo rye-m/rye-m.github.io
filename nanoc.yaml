@@ -14,7 +14,7 @@ deploy:
     kind: git
     branch: gh-pages
     remote: https://github.com/rye-m/rye-m.github.io.git
-    # forced: true
+    forced: true
 
 #     options:
 #       [
