@@ -12,4 +12,5 @@ vendor
 /output
 /tmp
 /.sass-cache
-/.bundle       
+/.bundle
+/_old       
