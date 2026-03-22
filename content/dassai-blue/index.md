@@ -7,6 +7,8 @@ published: 2025-4-8
 
 There was a Sakura Matsuri on April 5th and 6th 2025 in Hyde Park, where there is a Dassai Blue Japanese Sake Brewery!
 
+It was so fun (Test)
+
 Unfortunately, it was rainy and bit chilly but there were so many people!
 ![the line of people](./IMG_6418.jpg)
 ![caligraphy](./IMG_6394.jpg)

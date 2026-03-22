@@ -1,4 +1,4 @@
-Crash log created at 2025-05-12 11:46:02 -0400
+Crash log created at 2025-06-09 22:40:36 -0400
 
 ===== MESSAGE:
 
@@ -73,7 +73,7 @@ Running ruby 3.3.5 (2024-09-03) on arm64-darwin23 with RubyGems 3.5.16.
 
 ===== SYSTEM INFORMATION:
 
-Darwin dhcp-vl2051-323.eduroam.cornell.edu 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6030 arm64
+Darwin Ryes-MacBook-Pro.local 23.6.0 Darwin Kernel Version 23.6.0: Mon Jul 29 21:14:30 PDT 2024; root:xnu-10063.141.2~1/RELEASE_ARM64_T6030 arm64
 
 ===== INSTALLED GEMS:
 
